@@ -13,6 +13,7 @@ ul {
 }
 
 li {
+  justify-content: space-between;
   display: flex;
   align-items: center;
   width: 250px;
@@ -24,7 +25,7 @@ li {
 }
 
 #li-add {
-  padding: 0;
+  padding: 0 10px;
   justify-content: center;
   background-color: #f9e38e;
 }
@@ -37,10 +38,16 @@ li {
   border-radius: 5px;
 }
 
+#editTaskButton,
+#clearTasksButton {
+  cursor: pointer;
+  color: #556295;
+}
+
 /* CSS */
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #7183c7;
+  color: #556295;
   opacity: 1;
 }
 
@@ -59,4 +66,11 @@ button {
 #add {
   width: 25px;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
 }
