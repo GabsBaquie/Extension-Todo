@@ -106,7 +106,7 @@ function handleEditTask(id, span, checkbox) {
     if (e.key === "Enter") {
       const newText = input.value.trim();
       if (newText) {
-        span.textContent = newText;
+        span.textContent = newText.charAt(0).toUpperCase() + newText.slice(1);
         input.parentNode.replaceChild(span, input);
         updateTaskInLocalStorage(id, newText, checkbox.checked);
       } else {
