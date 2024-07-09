@@ -114,6 +114,17 @@ function handleEditTask(id, span, checkbox) {
       }
     }
   });
+
+  input.addEventListener("blur", () => {
+    const newText = input.value.trim();
+    if (newText) {
+      span.textContent = newText.charAt(0).toUpperCase() + newText.slice(1);
+      input.parentNode.replaceChild(span, input);
+      updateTaskInLocalStorage(id, newText, checkbox.checked);
+    } else {
+      alert("Le texte de la tâche ne peut pas être vide.");
+    }
+  });
 }
 
 function updateTaskInLocalStorage(id, text, completed) {

@@ -5,5 +5,9 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "public/Reminders 3D Icon.png"
+  },
+  "icons": {
+    "16": "public/Reminders 3D Icon.png",
+    "48": "public/Reminders 3D Icon.png"
   }
 }

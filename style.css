@@ -44,6 +44,12 @@ li {
   color: #556295;
 }
 
+.completed {
+  text-decoration: line-through;
+  color: #f9e38e;
+  opacity: 0.8;
+}
+
 /* CSS */
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
