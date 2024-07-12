@@ -39,6 +39,7 @@ function addTaskToList(id, text, completed) {
   li.dataset.taskId = id; // Attribuer l'identifiant unique à l'élément
 
   const taskDiv = document.createElement("div");
+  taskDiv.className = "task";
   li.appendChild(taskDiv);
 
   const input = createCheckbox(id, completed);

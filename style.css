@@ -12,6 +12,19 @@ ul {
   padding: 0;
 }
 
+.task {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+span {
+  word-wrap: break-word;
+  display: inline-block;
+  white-space: normal;
+  max-width: 150px;
+}
+
 li {
   justify-content: space-between;
   display: flex;
